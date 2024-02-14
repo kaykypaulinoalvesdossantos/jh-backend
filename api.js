@@ -44,11 +44,11 @@ app.post('/enviar-email-funcionario', upload.single('pdf_file'), (req, res) => {
   let mailOptions = {
     from: 'Contato <onboarding@resend.dev>',
     to: ['kayky.paulinoalves@gmail.com'],
-    subject: 'Contato Empresarial - PDF Anexado',
+    subject: 'Contato para envio de currículo',
     html: `<h1>Nome ${nome}</h1><br>
     <p>E-mail: ${email}</p>
     <p>Numero: ${telefone_dd}${telefone_numero}</p>
-    <p>Assunto: ${local_interesse}</p>
+    <p>Local de interesse: ${local_interesse}</p>
     `,
     attachments: [
       {
