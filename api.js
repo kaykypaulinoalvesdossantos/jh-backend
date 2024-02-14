@@ -2,13 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors'); // Import the cors package
 const { Resend } = require('resend');
+const port = process.env.PORT || 4000;
 
 const app = express()
   .use(cors()) // Enable CORS for all routes and origins
   .use(bodyParser.json())
   .use(bodyParser.urlencoded({ extended: false }));
 
-const port = 3001;
 
 const resend = new Resend('re_Tp1Lp9Z6_B2sH67CuEkwsDfvXSHyznaXH');
 
