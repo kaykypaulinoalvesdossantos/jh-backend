@@ -19,7 +19,7 @@ app.post('/enviar-email', (req, res) => {
   let { nome, email, telefone_dd, telefone_numero, local_interesse } = req.body;
   let mailOptions = {
     from: 'Contato <onboarding@resend.dev>',
-    to: ['contatojhtelecom@jhtele.com.br'],
+    to: ['ejhtelecom@gmail.com'],
     subject: 'Contato Empresarial',
     html: `<h1>Nome ${nome}</h1><br>
     <p>E-mail: ${email}</p>
@@ -43,7 +43,7 @@ app.post('/enviar-email-funcionario', upload.single('pdf_file'), (req, res) => {
 
   let mailOptions = {
     from: 'Contato <onboarding@resend.dev>',
-    to: ['contatojhtelecom@jhtele.com.br'],
+    to: ['ejhtelecom@gmail.com'],
     subject: 'Contato para envio de currículo',
     html: `<h1>Nome ${nome}</h1><br>
     <p>E-mail: ${email}</p>
