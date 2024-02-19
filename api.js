@@ -13,7 +13,7 @@ const app = express()
 const storage = multer.memoryStorage(); // Configure multer to store files in memory
 const upload = multer({ storage: storage }); // Create a multer instance
 
-const resend = new Resend('re_Tp1Lp9Z6_B2sH67CuEkwsDfvXSHyznaXH');
+const resend = new Resend('re_MTirKFrx_K34sx34mQss6RAevNTMCB7pM');
 
 app.post('/enviar-email', (req, res) => {
   let { nome, email, telefone_dd, telefone_numero, local_interesse } = req.body;
